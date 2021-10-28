@@ -84,7 +84,10 @@ function buildCharts(sample) {
       y: yticks,
       text: barLabels,
       type: 'bar',
-      orientation: 'h'
+      orientation: 'h',
+      marker: {
+        color: '#41b6c4'
+      }
       
     }];
     // 9. Create the layout for the bar chart. 
@@ -141,13 +144,13 @@ function buildCharts(sample) {
       title: {text: "<b>Belly Button Washing Frequency</b> <br> Scrubs per week"},
       gauge: {
         axis: {range: [null,10], dtick: "2"},
-        bar: {color: "black"},
+        bar: {color: "gray"},
         steps:[
-          {range: [0,2], color: "red"},
-          {range: [2,4], color: "orange"},
-          {range: [4,6], color: "yellow"},
-          {range: [6,8], color: "yellowgreen"},
-          {range: [8,10], color: "green"}
+          {range: [0,2], color: "#edf8b1"},
+          {range: [2,4], color: "#c7e9b4"},
+          {range: [4,6], color: "#7fcdbb"},
+          {range: [6,8], color: "#1d91c0"},
+          {range: [8,10], color: "#253494"}
         ]
       }
     }];
